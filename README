@@ -1,0 +1,16 @@
+This implementation is an extension of libsvm and implements alternating SMO and conjugate
+alternating SMO for solving SVM+, described in [1] and [2]. 
+
+To generate executables run "make all".
+
+As in libsvm, you can see the description of all parameters by simply running ./svm-train .
+To speed up the experiments, I usually ran SVM+ with a relatively loose stopping criterion: -e 1.9 .
+
+Feel free to ask any questions that you might have!
+
+Dmitry Pechyony
+pechyony@gmail.com
+
+[1] D. Pechyony, R. Izmailov, A. Vashist and V. Vapnik. SMO-style Algorithms for Learning using Privileged Information . DMIN 2010. 
+[2] D. Pechyony and V. Vapnik. Fast Optimization Algorithms for Solving SVM+. Chapter in Statistical Learning and Data Science, 2011.
+
