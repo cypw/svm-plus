@@ -33,8 +33,6 @@ doc/html
 doc/latex
 doc/doc
 
-#dmlc
-#config.mk
 
 *.pyc
 .Rhistory
