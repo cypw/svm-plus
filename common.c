@@ -1390,7 +1390,7 @@ const char *kernel_type_table[]=
 int svm_save_model(const char *model_file_name, const svm_model *model)
 {
   FILE *fp = fopen(model_file_name,"w");
-  fprintf(stdout,"model_file_name=%s", model_file_name);
+  fprintf(stdout,"model_file_name=%s\n", model_file_name);
   fflush(stdout);
   if(fp==NULL) return -1;
 
@@ -1412,7 +1412,7 @@ int svm_save_model(const char *model_file_name, const svm_model *model)
   int l = model->l;
   fprintf(fp, "nr_class %d\n", nr_class);
   fprintf(fp, "total_sv %d\n",l);
-  fprintf(stdout, "total_sv=%d",l);
+  fprintf(stdout, "total_sv=%d\n",l);
   fflush(stdout);
 	
   {
