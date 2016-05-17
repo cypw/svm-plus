@@ -922,6 +922,8 @@ svm_model *svm_train(const svm_problem *prob, const svm_parameter *param)
 	      free(sub_prob.x_star);
 	    free(sub_prob.y);
 	    ++p;
+
+            info("\n- - - - [i: %d/%d, j: %d/%d] - - - -\n", i, nr_class, j, nr_class);
 	  }
 
       // build output
