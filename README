@@ -3,6 +3,7 @@ This SVM+ code was originally written by [Dmitry Pechyony](http://www.cs.technio
 I downloaded it on 2016/05/17 and fixed some minor bugs to make it runnable on Ubuntu 14.04LTS x64. 
 
 I did't change any core function, so it should give the exactly same result as the original one [CODE](http://www.cs.technion.ac.il/~pechyony/conj_svm.tar.gz).
+> The original code is also provided [conj_svm.tar.gz](conj_svm.tar.gz) just in case the above link expired.
 
 Simple examples are provided under [example/binary-cls](example/binary-cls), plase make sure you have compiled [libsvm-3.21](libsvm-3.21) before trying.
 > I use the LIBSVM-3.21 for svm prediction, since the SVM+'s prediction program cannot give a resonable reuslt and may have some bugs.
