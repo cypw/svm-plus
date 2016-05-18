@@ -1079,7 +1079,6 @@ svm_model *svm_train(const svm_problem *prob, const svm_parameter *param)
       free(nonzero);
       for(i=0;i<nr_class*(nr_class-1)/2;i++)
 	free(f[i].alpha);
-      free(f);
       free(nz_count);
       free(nz_start);
       if(model->param.svm_type == SVM_PLUS) {
@@ -1089,6 +1088,7 @@ svm_model *svm_train(const svm_problem *prob, const svm_parameter *param)
         free(nz_count_star);
         free(nz_start_star);
       }
+      free(f);
 
     }
   return model;
